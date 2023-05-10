@@ -45,7 +45,10 @@ Example Response:
 
 ### Goal 2
 
-Ask the user if the next card will be Red or Black. You can use any input element for this, ex input, buttons, dropdown
+Ask the user if the next card will be Red or Black. You can use any input element for this, ex text input, buttons, dropdown
+
+
+### Goal 3
 
 Once they input their answer, draw a card from your deck using the API (as seen below) and check if they are correct or incorrect:
 
@@ -73,27 +76,36 @@ Example Response:
 
 ```
 
-### Goal 3
-
-Once a rating has been submitted, load a new dog image and reset your form elements.
-
 ### Goal 4
 
-Add a section to your app where you can review the history of your dog ratings with both the picture and rating.
+If the user guessed incorrectly, give them a message informing them, and then give them the option to restart the game from Goal 1 with a new deck.
 
-Note: this does not require a database, you can use a simple client side cache that only needs to persist until the page is refreshed.
+If the user guessed correctly, give them a success message, and the option to move on to Goal 5
 
 ### Goal 5
 
-Add sorting to your ratings history by highest rated and lowest rated.
+Ask the user if the next card will be higher, lower, or equal to the first card.Again, you can use any input element for this, ex text input, buttons, dropdown.
+
+Then draw another card like in goal 3.
+
+If the user guessed incorrectly, give them a message informing them, and then give them the option to restart the game from Goal 1 with a new deck.
+
+If the user guessed correctly, give them a success message, and the option to move on to Goal 6
 
 ### Goal 6
 
-Add an option to filter the random dogs being provided by breed, using the list of dog breeds in the [provided file](dog-breeds.txt).
+Ask the user if the next card will be Hearts, Diamonds, Clubs, or Spades. 
+Again, you can use any input element for this, ex text input, buttons, dropdown.
 
-Use the [random by breed](https://dog.ceo/dog-api/documentation/breed) endpoint of the API for this.
+Then draw another card like in goal 3.
 
-`https://dog.ceo/api/breed/${BREED_HERE}/images/random`
+If the user guessed incorrectly, give them a message informing them, and then give them the option to restart the game from Goal 1 with a new deck.
+
+If the user guessed correctly, move on to Goal 7
+
+### Goal 7
+
+Build a nice congratulations page for users who won!
 
 ## Your solution
 
@@ -132,5 +144,5 @@ If you have any questions, you can email Ivana Erlich at ierlich@uottawa.ca
 ## Bonus Challenges
 
 - Make your UI responsive, that is usable on all screen sizes
-- Implement any other features provided by the API
-
+- Add animations
+- Keep track of how many games the user has won or lost
