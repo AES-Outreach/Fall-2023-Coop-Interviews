@@ -84,7 +84,7 @@ If the user guessed correctly, give them a success message, and the option to mo
 
 ### Goal 5
 
-Ask the user if the next card will be higher, lower, or equal to the first card.Again, you can use any input element for this, ex text input, buttons, dropdown.
+Ask the user if the next card will be higher, lower, or equal to the first card. Again, you can use any input element for this, ex text input, buttons, dropdown.
 
 Then repeat steps 3 & 4 (draw a card and validate)
 
