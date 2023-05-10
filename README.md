@@ -142,6 +142,7 @@ If you have any questions, you can email Ivana Erlich at ierlich@uottawa.ca
 
 
 ## Bonus Challenges
+If you're done and looking for more challenges, try these out:
 
 - Make your UI responsive, that is usable on all screen sizes
 - Add animations
