@@ -20,14 +20,11 @@ Welcome to the OutStem front-end challenge. Submission instructions are listed b
 
 The challenge is to build a fun card game app, where users will be given cards from a [standard deck of playing cards](https://en.wikipedia.org/wiki/Standard_52-card_deck), and make guesses about the next card that will be drawn. 
 
-The design and layout of the website is totally up to you, though you will be judged on the look, feel, and usability of your application, so do your best to respect best practices in web design.
+The design and layout of the website is totally up to you (feel free to use any UI libraries), though you will be judged on the look, feel, and usability of your application, so do your best to respect best practices in web design.
 
 For this challenge, we will be using the [Deck of Cards API](https://www.deckofcardsapi.com/), which creates a deck of cards for you, gives you a `deck_id`, and keeps track of which cards are left as you draw cards.
 
 ## Goals
-
-*The styling for this challenge is up to you, feel free to use any UI libraries*
-
 This challenge has multiple goals that increase in level of difficulty, implement as many of these goals as you are able to.
 
 ### Goal 1
@@ -50,9 +47,9 @@ Example Response:
 
 Ask the user if the next card will be Red or Black. You can use any input element for this, ex input, buttons, dropdown
 
-Once they input their answer, draw a card from your deck using the API:
+Once they input their answer, draw a card from your deck using the API (as seen below) and check if they are correct or incorrect:
 
-URL: `https://www.deckofcardsapi.com/api/deck/<<deck_id>>/draw/?count=1`
+URL: `https://www.deckofcardsapi.com/api/deck/YOURDECKIDHERE/draw/?count=1`
 
 Example Response:
 ```json
