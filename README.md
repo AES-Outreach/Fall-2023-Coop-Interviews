@@ -1,11 +1,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/AES-Outreach/Summer-2023-Coop-Interviews">
+  <a href="https://github.com/AES-Outreach/Fall-2023-Coop-Interviews">
     <img src="outstem_logo_icon.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">OutStem Summer 2023 Coding Challenge</h3>
+  <h3 align="center">OutStem Fall 2023 Coding Challenge</h3>
 
   <p align="center">
     Welcome to the OutStem coding interview.
@@ -14,16 +14,15 @@
 
 # OutStem Front-end Challenge
 
-Welcome to the OutStem front-end challenge. Submission instructions are listed below. The deadline to submit this challenge is **Monday January 23rd, 9:00 AM**. We would like to emphasize that we are looking for effort, and that the challenge is just part of our discussion with you during the interview, so don’t worry if your solution is *hacky* or even if it doesn’t work, we want to see it!
+Welcome to the OutStem front-end challenge. Submission instructions are listed below. The deadline to submit this challenge is **Tuesday May 23rd, 9:00 AM**. We would like to emphasize that we are looking for effort, and that the challenge is just part of our discussion with you during the interview, so don’t worry if your solution is *hacky* or even if it doesn’t work, we want to see it!
 
 ## The Challenge
 
-The challenge is to build a "Rate My Dog" application that wraps the existing [Dog API](https://dog.ceo/dog-api/). This is meant to be a fun app where users can rate dogs from 10/10 to 15/10 (as dogs are amazing), inspired by the [WeRateDogs](https://twitter.com/dog_rates) twitter account.
+The challenge is to build a fun card game app, where users will be given cards from a [standard deck of playing cards](https://en.wikipedia.org/wiki/Standard_52-card_deck), and make guesses about the next card that will be drawn. 
 
 The design and layout of the website is totally up to you, though you will be judged on the look, feel, and usability of your application, so do your best to respect best practices in web design.
 
-
-
+For this challenge, we will be using the [Deck of Cards API](https://www.deckofcardsapi.com/), which creates a deck of cards for you, gives you a `deck_id`, and keeps track of which cards are left as you draw cards.
 
 ## Goals
 
@@ -32,15 +31,50 @@ The design and layout of the website is totally up to you, though you will be ju
 This challenge has multiple goals that increase in level of difficulty, implement as many of these goals as you are able to.
 
 ### Goal 1
-Fetch a random dog image from the API and display it on the page.
+Fetch a new deck of cards from the API, and print the response to the console
 
-Use the [random](https://dog.ceo/dog-api/documentation/random) endpoint of the API for this.
+URL: `https://www.deckofcardsapi.com/api/deck/new/`
 
-`https://dog.ceo/api/breeds/image/random`
+Example Response:
+```json
+{
+    "success": true,
+    "deck_id": "3p40paa87x90",
+    "shuffled": false,
+    "remaining": 52
+}
+```
+
 
 ### Goal 2
 
-Add a form element that lets users submit their rating, along with a submit button. This can be as simple as a text field, and as complex as a star rating input element.
+Ask the user if the next card will be Red or Black. You can use any input element for this, ex input, buttons, dropdown
+
+Once they input their answer, draw a card from your deck using the API:
+
+URL: `https://www.deckofcardsapi.com/api/deck/<<deck_id>>/draw/?count=1`
+
+Example Response:
+```json
+{
+    "success": true, 
+    "deck_id": "kxozasf3edqu", 
+    "cards": [
+        {
+            "code": "5S", 
+            "image": "https://deckofcardsapi.com/static/img/5S.png", 
+            "images": {
+                          "svg": "https://deckofcardsapi.com/static/img/5S.svg", 
+                          "png": "https://deckofcardsapi.com/static/img/5S.png"
+                      }, 
+            "value": "5", 
+            "suit": "SPADES"
+        }
+    ], 
+    "remaining": 50
+}
+
+```
 
 ### Goal 3
 
@@ -83,9 +117,9 @@ You will be evaluated on:
 
 ## Submission
 
-Please submit your solution in the 2023 Summer interview GitHub repository via GitHub Issue.
+Please submit your solution in the 2023 Fall interview GitHub repository via GitHub Issue.
 
-1. Navigate to the following link (https://github.com/AES-Outreach/Summer-2023-Coop-Interviews/issues/new/choose) or:
+1. Navigate to the following link (https://github.com/AES-Outreach/Fall-2023-Coop-Interviews/issues/new/choose) or:
    1. Navigate to the challenge repository
    2. Click **Issues**
    3. Click **New Issue**
