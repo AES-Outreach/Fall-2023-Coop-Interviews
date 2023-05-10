@@ -80,28 +80,20 @@ Example Response:
 
 If the user guessed incorrectly, give them a message informing them, and then give them the option to restart the game from Goal 1 with a new deck.
 
-If the user guessed correctly, give them a success message, and the option to move on to Goal 5
+If the user guessed correctly, give them a success message, and the option to move on to the next stage of the game
 
 ### Goal 5
 
 Ask the user if the next card will be higher, lower, or equal to the first card.Again, you can use any input element for this, ex text input, buttons, dropdown.
 
-Then draw another card like in goal 3.
-
-If the user guessed incorrectly, give them a message informing them, and then give them the option to restart the game from Goal 1 with a new deck.
-
-If the user guessed correctly, give them a success message, and the option to move on to Goal 6
+Then repeat steps 3 & 4 (draw a card and validate)
 
 ### Goal 6
 
 Ask the user if the next card will be Hearts, Diamonds, Clubs, or Spades. 
 Again, you can use any input element for this, ex text input, buttons, dropdown.
 
-Then draw another card like in goal 3.
-
-If the user guessed incorrectly, give them a message informing them, and then give them the option to restart the game from Goal 1 with a new deck.
-
-If the user guessed correctly, move on to Goal 7
+Then repeat steps 3 & 4 (draw a card and validate)
 
 ### Goal 7
 
