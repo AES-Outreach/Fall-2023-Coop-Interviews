@@ -130,7 +130,7 @@ Please submit your solution in the 2023 Fall interview GitHub repository via Git
 5. Click **Submit New Issue**
 6. Done! Thank you for completing the challenge, we look forward to discussing your solution with you during the interview. 🎉
 
-If you have any questions, you can email Ivana Erlich at ierlich@uottawa.ca
+If you have any questions, you can email Alexandre Séguin at asegui8@uottawa.ca
 
 
 ## Bonus Challenges
